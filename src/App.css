@@ -2,19 +2,118 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-logo-container {
+  position: fixed;
+  bottom:50px;
+  width: 100%;
+  /* display: inline-block; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
+.App-logo {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 20px;
+  align-items: center;
+}
+
+/* .pulp {
+  position:relative;
+  right: 580px;
+  bottom:50px;
+} */
+
+/* .Footer{
+  display: flex;
+  width: 100%;
+  border: white;
+} */
+
+@media screen and (max-width: 480px) {
+  .pulp {
+    display: none;
+  }
+
+  p{
+    text-wrap: nowrap;
+  }
+
+  .App-logo-container {
+    position: fixed;
+    bottom:50px;
+    width: 100%;
+  }
+
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    margin-left: 0%;
+    margin-right: 0px;
+  }
+
+  .comingsoon-text {
+    text-align: right;
+    white-space: nowrap;
+    /* padding-left: 100%; */
+    animation: my-animation 10s linear infinite;
+  }
+  
+  /* for Firefox */
+
+
+  
+  @keyframes my-animation {
+    0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
   }
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .App-logo-container {
+    position: fixed;
+    bottom:50px;
+    width: 100%;
+  }
+
+  .App-logo {
+    margin-left: 0%;
+    margin-right: 0px;
+  }
+
+}
+
+/* @media screen and (min-width: 769px) and (max-width: 1440px) {
+  .pulp {
+    visibility: visible;
+    position:absolute;
+    right: 450px;
+    bottom:50px;
+  }
+
+}
+
+/* @media screen and (min-width: 1441px) and (max-width: 1920px) {
+  .pulp {
+    visibility: visible;
+    position:absolute;
+    right: 680px;
+    bottom:50px;
+  }
+
+
+} */
+
+/* @media screen and (max-width: 1600px) {
+  .pulp {
+    position:absolute;
+    right: 580px;
+    bottom:50px;
+  }
+} */
+
 .App-header {
-  background-color: #282c34;
+  background-color: #121212;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -24,15 +123,24 @@
   color: white;
 }
 
+.comingsoon-text{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-size: 148px;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+
+}
+
+.arilstopright {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}

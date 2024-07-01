@@ -1,23 +1,28 @@
 import logo from './logo.svg';
+import arils from './assets/arils.png'
+import pulp from './assets/pulp.png'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+        <img src={arils} className="arilstopright" alt="arils" />
+        <p className="comingsoon-text">
+          coming soon
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <div className="App-logo-container">
+          <div className="App-logo">
+            <img src={logo} alt="logo" />
+          </div>
+          {/* <div className="pulp right"> */}
+          <img src={pulp} className="pulp" alt="logo" />
+          {/* </div> */}
+        </div>
+        
       </header>
+
     </div>
   );
 }
