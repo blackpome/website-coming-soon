@@ -1,28 +1,20 @@
 import logo from './logo.svg';
-import arils from './assets/arils.png'
-import pulp from './assets/pulp.png'
-import './App.css';
+import arils from './assets/arils.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={arils} className="arilstopright" alt="arils" />
-        <p className="comingsoon-text">
+    <div className="text-center">
+      <header className="bg-[#121212] min-h-screen flex flex-col items-center justify-center text-white relative">
+        <img src={arils} className="absolute top-2 right-4" alt="arils" />
+        
+        <p className="text-[148px] font-extralight font-sans whitespace-nowrap animate-scroll text-right w-full overflow-hidden">
           coming soon
         </p>
 
-        <div className="App-logo-container">
-          <div className="App-logo">
-            <img src={logo} alt="logo" />
-          </div>
-          {/* <div className="pulp right"> */}
-          <img src={pulp} className="pulp" alt="logo" />
-          {/* </div> */}
+        <div className="fixed bottom-[50px] w-full flex justify-center items-center">
+          <img src={logo} className="inline-block" alt="logo" />
         </div>
-        
       </header>
-
     </div>
   );
 }
